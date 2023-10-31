@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 1448361147}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0819d81e4634a410eb8984c741aa384e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpAmount: 25
+  jumpAmount: 50
   gravityScale: 3
   fallingGravityScale: 40
   speed: 10

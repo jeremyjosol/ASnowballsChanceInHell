@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private float movementY;
 
     public float speed = 0; 
+    private bool isGrounded = true;
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpAmount, ForceMode.Impulse);
+            isGrounded = false;
         }
     }
 
@@ -44,11 +46,26 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 movement = new Vector3 (movementX, 0.0f, movementY);
         rb.AddForce(movement * speed); 
-        rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
+        // rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
+
+        if (isGrounded)
+        {
+            rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
+        }
+        else
+        {
+            rb.AddForce(Physics.gravity * (fallingGravityScale - 1) * rb.mass);
+        }
     }
 
      void OnTriggerEnter(Collider other) 
     {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true; // The player is grounded when colliding with an object tagged as "Ground."
+        }
+        
+        
         if (other.gameObject.CompareTag("PickUp")) 
         {
             other.gameObject.SetActive(false);
