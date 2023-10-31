@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 0; 
     private bool isGrounded = true;
+    // private bool hasPickedUp = false;
+
 
     void Start()
     {
@@ -62,13 +64,16 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ground"))
         {
-            isGrounded = true; // The player is grounded when colliding with an object tagged as "Ground."
+            isGrounded = true;
         }
         
         
         if (other.gameObject.CompareTag("PickUp")) 
         {
             other.gameObject.SetActive(false);
+            // speed = 100;
+            // Vector3 movement = new Vector3 (movementX, 0f, movementY);
+            // rb.AddForce(movement * 10000);
             // count++; 
             // SetCountText();
             // pickupSound.clip = sfx;
