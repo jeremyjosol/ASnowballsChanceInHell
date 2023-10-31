@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb; 
     // private int count;
+    public float jumpAmount = 80;
+    public float gravityScale = 10;
+    public float fallingGravityScale = 40;
     private float movementX;
     private float movementY;
 
@@ -28,10 +31,20 @@ public class PlayerController : MonoBehaviour
         movementY = movementVector.y; 
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * jumpAmount, ForceMode.Impulse);
+        }
+    }
+
+    
     private void FixedUpdate() 
     {
         Vector3 movement = new Vector3 (movementX, 0.0f, movementY);
         rb.AddForce(movement * speed); 
+        rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
     }
 
      void OnTriggerEnter(Collider other) 
