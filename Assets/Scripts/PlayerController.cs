@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using System.Collections.Specialized;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,12 +24,15 @@ public class PlayerController : MonoBehaviour
     // private bool isGrounded = true;
     // private bool hasPickedUp = false;
 
+    private Vector3 melted = new Vector3(0.25f, 0.25f, 0.25f);
+
     void Start()
     {
         count = 0; 
         rb = GetComponent<Rigidbody>();
         winTextObject.SetActive(false);
         SetCountText();
+        StartCoroutine(Shrink(melted, 30));
     }
  
     void OnMove(InputValue movementValue)
@@ -95,5 +99,22 @@ public class PlayerController : MonoBehaviour
         {
            winTextObject.SetActive(true);
         }
+    }
+
+    IEnumerator Shrink(Vector3 targetScale, float duration)
+    {
+        Vector3 startScale = transform.localScale;
+        float timer = 0.0f;
+
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            float t = timer / duration;
+            t = t * t * t * (t * (6f * t - 15f) + 10f);
+            transform.localScale = Vector3.Lerp(startScale, targetScale, t);
+            yield return null;
+        }
+
+        yield return null;
     }
 }
