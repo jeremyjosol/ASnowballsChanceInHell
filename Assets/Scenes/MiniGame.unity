@@ -1220,9 +1220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 1435122068}
   winTextObject: {fileID: 471675533}
-  jumpAmount: 75
-  gravityScale: 0.3
-  fallingGravityScale: 60
+  jumpSpeed: 20
   speed: 10
 --- !u!114 &1639430477
 MonoBehaviour:

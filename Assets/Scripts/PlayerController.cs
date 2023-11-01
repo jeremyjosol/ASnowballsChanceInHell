@@ -12,14 +12,15 @@ public class PlayerController : MonoBehaviour
     private int count;
     private Rigidbody rb; 
     // private int count;
-    public float jumpAmount = 80;
-    public float gravityScale = 10;
-    public float fallingGravityScale = 40;
+    // public float jumpAmount = 80;
+    // public float gravityScale = 10;
+    // public float fallingGravityScale = 40;
     private float movementX;
     private float movementY;
-
+    public int jumpSpeed = 0;
     public float speed = 0; 
-    private bool isGrounded = true;
+    private bool isTouching = true;
+    // private bool isGrounded = true;
     // private bool hasPickedUp = false;
 
     void Start()
@@ -39,11 +40,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey("space") && isTouching == true)
         {
-            rb.AddForce(Vector3.up * jumpAmount, ForceMode.Impulse);
-            isGrounded = false;
+            Vector3 ballJump = new Vector3(0.0f, 6.0f, 0.0f);
+            rb.AddForce(ballJump * jumpSpeed);
         }
+        isTouching = false;
     }
 
     private void FixedUpdate() 
@@ -51,25 +53,23 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3 (movementX, 0.0f, movementY);
         rb.AddForce(movement * speed); 
         // rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
-
-        if (isGrounded)
-        {
-            rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
-        }
-        else
-        {
-            rb.AddForce(Physics.gravity * (fallingGravityScale - 1) * rb.mass);
-        }
     }
+    //     if (isGrounded)
+    //     {
+    //         rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
+    //     }
+    //     else
+    //     {
+    //         rb.AddForce(Physics.gravity * (fallingGravityScale - 1) * rb.mass);
+    //     }
+    // }
 
     void OnTriggerEnter(Collider other) 
     {
-        if (other.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-        
-        
+        // if (other.gameObject.CompareTag("Ground"))
+        // {
+        //     isGrounded = true;
+        // }
         if (other.gameObject.CompareTag("PickUp")) 
         {
             other.gameObject.SetActive(false);
@@ -81,6 +81,11 @@ public class PlayerController : MonoBehaviour
             // pickupSound.clip = sfx;
             // pickupSound.Play();
         }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        isTouching = true;
     }
 
     void SetCountText() 
