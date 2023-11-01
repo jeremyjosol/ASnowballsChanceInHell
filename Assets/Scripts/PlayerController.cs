@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    public TextMeshProUGUI countText;
+    public GameObject winTextObject;
+    private int count;
     private Rigidbody rb; 
     // private int count;
     public float jumpAmount = 80;
@@ -21,10 +25,10 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        // count = 0; 
+        count = 0; 
         rb = GetComponent<Rigidbody>();
-        // winTextObject.SetActive(false);
-        // SetCountText();
+        winTextObject.SetActive(false);
+        SetCountText();
     }
  
     void OnMove(InputValue movementValue)
@@ -43,7 +47,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    
     private void FixedUpdate() 
     {
         Vector3 movement = new Vector3 (movementX, 0.0f, movementY);
@@ -60,7 +63,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-     void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter(Collider other) 
     {
         if (other.gameObject.CompareTag("Ground"))
         {
@@ -74,10 +77,20 @@ public class PlayerController : MonoBehaviour
             // speed = 100;
             // Vector3 movement = new Vector3 (movementX, 0f, movementY);
             // rb.AddForce(movement * 10000);
-            // count++; 
-            // SetCountText();
+            count++; 
+            SetCountText();
             // pickupSound.clip = sfx;
             // pickupSound.Play();
+        }
+    }
+
+    void SetCountText() 
+    {
+        countText.text =  "Score: " + count.ToString();
+        
+        if (count >= 1)
+        {
+           winTextObject.SetActive(true);
         }
     }
 }
