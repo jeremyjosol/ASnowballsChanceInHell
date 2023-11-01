@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded = true;
     // private bool hasPickedUp = false;
 
-
     void Start()
     {
         count = 0; 
@@ -87,7 +86,6 @@ public class PlayerController : MonoBehaviour
     void SetCountText() 
     {
         countText.text =  "Score: " + count.ToString();
-        
         if (count >= 1)
         {
            winTextObject.SetActive(true);
