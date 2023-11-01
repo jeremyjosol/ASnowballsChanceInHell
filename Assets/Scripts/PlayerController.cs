@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         winTextObject.SetActive(false);
         SetCountText();
-        StartCoroutine(Shrink(melted, 30));
+        StartCoroutine(Shrink(melted, 90));
     }
  
     void OnMove(InputValue movementValue)
