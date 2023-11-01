@@ -8,7 +8,7 @@ public class CountdownTimer : MonoBehaviour
     public float TimeValue = 90.0f;
     private float minutes;
     private float seconds;
-    private TextMeshProUGUI TimerText;
+    public TextMeshProUGUI TimerText;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +27,7 @@ public class CountdownTimer : MonoBehaviour
         {
             TimeValue = 0;
         }
+        DisplayTime(TimeValue);
     }
 
     void DisplayTime(float timeToDisplay)
