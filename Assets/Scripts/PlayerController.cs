@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public AudioSource backgroundMusic;
     public AudioSource jumpSound;
     public AudioSource pickupSound;
     public Transform ballTransform;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        backgroundMusic.Play();
         count = 0; 
         rb = GetComponent<Rigidbody>();
         winTextObject.SetActive(false);
