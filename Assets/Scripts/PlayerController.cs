@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     private bool isTouching = true;
     // private bool isGrounded = true;
     // private bool hasPickedUp = false;
+    private float boostTimer;
+    private bool boosting;
 
     private Vector3 melted = new Vector3(0.25f, 0.25f, 0.25f);
 
@@ -61,6 +63,17 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
+
+        if(boosting)
+        {
+            boostTimer += Time.deltaTime;
+            if(boostTimer >= 0.5)
+            {
+                speed = 10;
+                boostTimer = 0;
+                boosting = false;
+            }
+        }
     }
 
     private void FixedUpdate() 
@@ -85,6 +98,14 @@ public class PlayerController : MonoBehaviour
         // {
         //     isGrounded = true;
         // }
+        if (other.gameObject.CompareTag("Boost"))
+        {
+            boosting = true;
+            speed = 20;
+            Destroy(other.gameObject);
+            Debug.Log("boost");
+        }
+
         if (other.gameObject.CompareTag("PickUp")) 
         {
             other.gameObject.SetActive(false);
