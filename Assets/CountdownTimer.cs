@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class CountdownTimer : MonoBehaviour
         if (timeToDisplay < 0)
         {
             timeToDisplay = 0;
+            SceneManager.LoadScene(2);        
         }
         minutes = Mathf.FloorToInt(timeToDisplay / 60);
         seconds = Mathf.FloorToInt(timeToDisplay % 60);

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 using System.Collections.Specialized;
-using System.Collections.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
