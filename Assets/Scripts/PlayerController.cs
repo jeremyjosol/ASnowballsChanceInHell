@@ -28,6 +28,10 @@ public class PlayerController : MonoBehaviour
     private bool isTouching = true;
     // private bool isGrounded = true;
     // private bool hasPickedUp = false;
+    private float boostTimer;
+    private bool boosting;
+    private float slowTimer;
+    private bool slowDown;
 
     private Vector3 melted = new Vector3(0.25f, 0.25f, 0.25f);
 
@@ -61,6 +65,28 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
+
+        if(slowDown)
+        {
+            slowTimer += Time.deltaTime;
+            if(slowTimer >= 1)
+            {
+                speed = 10;
+                slowTimer = 0;
+                slowDown = false;
+            }
+        }
+
+        if(boosting)
+        {
+            boostTimer += Time.deltaTime;
+            if(boostTimer >= 0.5)
+            {
+                speed = 10;
+                boostTimer = 0;
+                boosting = false;
+            }
+        }
     }
 
     private void FixedUpdate() 
@@ -85,6 +111,29 @@ public class PlayerController : MonoBehaviour
         // {
         //     isGrounded = true;
         // }
+
+        if (other.gameObject.CompareTag("SlowField"))
+        {
+            Debug.Log("hit slow field");
+            slowDown = true;
+
+            speed = -15;
+            Vector3 movement = new Vector3 (movementX, 0.0f, movementY);
+            rb.AddForce(movement * speed * 0.1f);
+            // other.gameObject.SetActive(false);
+            // Destroy(other.gameObject);
+            Debug.Log("slow field destroyed");
+
+        }
+
+        if (other.gameObject.CompareTag("Boost"))
+        {
+            boosting = true;
+            speed = 20;
+            Destroy(other.gameObject);
+            Debug.Log("boost");
+        }
+
         if (other.gameObject.CompareTag("PickUp")) 
         {
             other.gameObject.SetActive(false);
@@ -95,6 +144,11 @@ public class PlayerController : MonoBehaviour
             SetCountText();
             // pickupSound.clip = sfx;
             pickupSound.Play();
+        }
+
+        if (other.gameObject.CompareTag("FinishLine"))
+        {
+            SceneManager.LoadScene(3);
         }
     }
 

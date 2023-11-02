@@ -6,11 +6,14 @@ TagManager:
   tags:
   - PickUp
   - Ground
+  - Boost
+  - SlowField
+  - FinishLine
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
