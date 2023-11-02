@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public AudioSource pickupSound;
     public Transform ballTransform;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
@@ -89,7 +90,7 @@ public class PlayerController : MonoBehaviour
             count++; 
             SetCountText();
             // pickupSound.clip = sfx;
-            // pickupSound.Play();
+            pickupSound.Play();
         }
     }
 
