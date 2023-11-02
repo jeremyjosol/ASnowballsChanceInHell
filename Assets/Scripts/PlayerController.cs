@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public AudioSource jumpSound;
     public AudioSource pickupSound;
     public Transform ballTransform;
     public TextMeshProUGUI countText;
@@ -47,10 +48,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey("space") && isTouching == true)
+        if (Input.GetKeyDown("space") && isTouching == true)
         {
             Vector3 ballJump = new Vector3(0.0f, 6.0f, 0.0f);
             rb.AddForce(ballJump * jumpSpeed);
+            jumpSound.Play();
         }
         isTouching = false;
         if (ballTransform.position.y < -1.0f)
