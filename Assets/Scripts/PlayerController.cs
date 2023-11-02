@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey("space") && isTouching == true)
+        if (Input.GetKeyDown("space") && isTouching == true)
         {
             Vector3 ballJump = new Vector3(0.0f, 6.0f, 0.0f);
             rb.AddForce(ballJump * jumpSpeed);
