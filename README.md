@@ -1,10 +1,6 @@
 # A Snowball's Chance In Hell
 
-<html>
-<img src="GitAssets/Unity.jpg">
-</html>
-
-> _Powered by Unity_
+_By [Ian Bravo](https://github.com/ian-bravo), [Jonathan Cheng](https://github.com/joncheng-dev), [Onur Kaymak](https://github.com/onurkaymak), [Richard Barbour](https://github.com/rbarcode), & [Jeremy Josol](https://github.com/jeremyjosol)_.
 
 ## Technologies Used
 
@@ -16,8 +12,15 @@
 * _JSON_
 
 ### Gameplay
+Embark on a remarkable journey as a resilient Snowball in the scorching depths of Hell, where every moment is a test of determination and willpower. Our intrepid hero, the Snowball, faces impossible challenges and seemingly insurmountable odds, a reflection of life's adversities. In this gripping adventure, the Snowball strives to make the impossible _possible_.
 
-_The Player GameObject statically reacts to player input by applying directional force, and the duration of keypresses directly influences the acceleration of the Player's movement._
+You, the player, take on the role of the Snowball GameObject, and in this story of courage and tenacity, the Snowball reacts to your input with unwavering resolve. By applying directional forces, you guide the Snowball through a world engulfed in flames, where danger lurks at every corner.
+
+Every action shapes the Snowball's destiny, making it more than just a test of skill but a test of your empathy. Can you guide the Snowball to safety and help it defy the odds against it? The answer lies in your hands in this thrilling adventure of resilience and the triumph of the human spirit.
+
+<html>
+<img src="GitAssets/Title.jpg">
+</html>
 
 > #### Controls
 
@@ -52,14 +55,41 @@ _The Player GameObject statically reacts to player input by applying directional
 
 * Win or lose conditions are established to determine the outcome of the Player's efforts.
 
+---
+
+<html>
+<img src="GitAssets/Unity.jpg">
+</html>
+
+  > _Powered by Unity_
+
+---
+
+### Credits and Acknowledgements
+
+> #### Assets
+
+* Asset 1
+* Asset 2
+
+> #### Music
+- **Artist:** Aphex Twin
+- **Album:** Drukqs
+- **Songs:** 
+  - Bbydhyonchord
+  - Vordhosbn
+
+### Known Bugs
+No bugs known.
+
 ### ⚖️ License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2023 _Ian Bravo, Jonathan Cheng, Onur Kaymak, Richard Barbour, Jeremy Josol_. All Rights Reserved.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2023 _Ian Bravo, Jonathan Cheng, Onur Kaymak, Richard Barbour, & Jeremy Josol_. All Rights Reserved.
 
 ```
 MIT License
 
-Copyright (c) 2023 Ian Bravo, Jonathan Cheng, Onur Kaymak, Richard Barbour, Jeremy Josol.
+Copyright (c) 2023 Ian Bravo, Jonathan Cheng, Onur Kaymak, Richard Barbour, & Jeremy Josol.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
