@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(ballJump * jumpSpeed);
         }
         isTouching = false;
-        if (ballTransform.position.y < 1.0f)
+        if (ballTransform.position.y < -1.0f)
         {
             SceneManager.LoadScene(2);
         }
