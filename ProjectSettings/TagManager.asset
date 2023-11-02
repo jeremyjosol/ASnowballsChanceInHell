@@ -7,6 +7,7 @@ TagManager:
   - PickUp
   - Ground
   - Boost
+  - SlowField
   layers:
   - Default
   - TransparentFX
