@@ -5,9 +5,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 using System.Collections.Specialized;
+using System.Collections.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public Transform ballTransform;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     private int count;
@@ -50,6 +52,10 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(ballJump * jumpSpeed);
         }
         isTouching = false;
+        if (ballTransform.position.y < 1.0f)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 
     private void FixedUpdate() 
@@ -95,7 +101,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText() 
     {
         countText.text =  "Score: " + count.ToString();
-        if (count >= 1)
+        if (count >= 1000)
         {
            winTextObject.SetActive(true);
         }
