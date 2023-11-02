@@ -1,6 +1,15 @@
 # A Snowball's Chance In Hell
 
+<html>
+<img src="GitAssets/Title.jpg">
+</html>
+
 _By [Ian Bravo](https://github.com/ian-bravo), [Jonathan Cheng](https://github.com/joncheng-dev), [Onur Kaymak](https://github.com/onurkaymak), [Richard Barbour](https://github.com/rbarcode), & [Jeremy Josol](https://github.com/jeremyjosol)_.
+
+## About
+Embark on a remarkable journey as a resilient Snowball in the scorching depths of Hell, where every moment is a test of determination and willpower. Our intrepid hero, the Snowball, faces impossible challenges and seemingly insurmountable odds, a reflection of life's adversities. In this gripping adventure, the Snowball strives to make the impossible _possible_.
+
+Every action shapes the Snowball's destiny, making it more than just a test of skill but a test of your empathy. Can you guide the Snowball to safety and help it defy the odds against it? The answer lies in your hands in this thrilling adventure of resilience and the triumph of the human spirit.
 
 ## Technologies Used
 
@@ -12,14 +21,10 @@ _By [Ian Bravo](https://github.com/ian-bravo), [Jonathan Cheng](https://github.c
 * _JSON_
 
 ### Gameplay
-Embark on a remarkable journey as a resilient Snowball in the scorching depths of Hell, where every moment is a test of determination and willpower. Our intrepid hero, the Snowball, faces impossible challenges and seemingly insurmountable odds, a reflection of life's adversities. In this gripping adventure, the Snowball strives to make the impossible _possible_.
-
 You, the player, take on the role of the Snowball GameObject, and in this story of courage and tenacity, the Snowball reacts to your input with unwavering resolve. By applying directional forces, you guide the Snowball through a world engulfed in flames, where danger lurks at every corner.
 
-Every action shapes the Snowball's destiny, making it more than just a test of skill but a test of your empathy. Can you guide the Snowball to safety and help it defy the odds against it? The answer lies in your hands in this thrilling adventure of resilience and the triumph of the human spirit.
-
 <html>
-<img src="GitAssets/Title.jpg">
+<img src="GitAssets/Gameplay.jpg">
 </html>
 
 > #### Controls
@@ -45,15 +50,17 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 
 * The Player's speed is finely tuned to deliver a balanced yet thrilling experience.
 
-* All vessels in the game world are responsive to collisions, allowing for dynamic interactions as the Player navigates the Lake Of Fire.
+* All vessels in the game world are responsive to collisions, allowing for dynamic interactions.
 
-* Player Score is displayed and incremented each time a PickUp is collected, keeping track of the Player's performance.
+* Incrementable score display to keep track of performance.
 
-* Player can interact with various GameObjects that provide either a speed boost, enhancing their mobility, _or_ cause a slowdown effect, affecting their movement.
+* Various GameObjects that provide either a speed boost or slowdown.
 
-* Player faces a timed challenge as they journey through the depths of Hell to make it to a safer destination and as time shortens, the Player risks melting away into the Lake Of Fire.
+* Beat the clock to make it to a safer destination without completely melting.
 
-* Win or lose conditions are established to determine the outcome of the Player's efforts.
+* Sound effects and background music.
+
+* Win or lose conditions.
 
 ---
 
