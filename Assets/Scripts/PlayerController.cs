@@ -69,12 +69,11 @@ public class PlayerController : MonoBehaviour
         if(slowDown)
         {
             slowTimer += Time.deltaTime;
-            if(slowTimer >= 2)
+            if(slowTimer >= 1)
             {
                 speed = 10;
                 slowTimer = 0;
                 slowDown = false;
-                Debug.Log("back to normal speed from slow");
             }
         }
 
@@ -145,6 +144,11 @@ public class PlayerController : MonoBehaviour
             SetCountText();
             // pickupSound.clip = sfx;
             pickupSound.Play();
+        }
+
+        if (other.gameObject.CompareTag("FinishLine"))
+        {
+            SceneManager.LoadScene(3);
         }
     }
 
