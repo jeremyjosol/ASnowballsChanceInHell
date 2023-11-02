@@ -18424,6 +18424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0819d81e4634a410eb8984c741aa384e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballTransform: {fileID: 1639430474}
   countText: {fileID: 1435122068}
   winTextObject: {fileID: 471675533}
   jumpSpeed: 10
