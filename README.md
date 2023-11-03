@@ -22,16 +22,17 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 * _Blender_
 
 ## Prerequisites
-> Before you can work with this project in Unity, you'll need to have Unity installed and set up. Follow these steps to get started:
+
+* _Unity_
 
 #### 1. Installing Unity:
-  > If you don't have Unity installed, follow these steps to get it up and running:
+ > You'll need to have Unity installed and set up. If you don't, follow these steps to get started:
 
    a. Download Unity Hub:
   - Go to the [Unity Hub](https://unity.com/download) download page and download the Unity Hub installer for your operating system.
   - Install Unity Hub by running the downloaded installer and following the on-screen instructions.
 
-   b. Setting Up Unity:
+   b. Set Up Unity:
   - Open Unity Hub after installation.
 
   - Click the 'Installs' tab in Unity Hub.
@@ -73,7 +74,7 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
   https://github.com/jeremyjosol/ASnowballsChanceInHell.git
   ``` 
 
-Now, you're ready to work with the Unity project, create or edit scripts, and collaborate with the team as needed. Make sure to consult the project-specific documentation for additional setup and usage instructions.
+You are now ready to work with the Unity project, create or edit scripts, and collaborate with the team as needed. Make sure to consult the project-specific documentation for additional setup and usage instructions.
 
 ### Gameplay
 You, the player, take on the role of the Snowball GameObject, and in this story of courage and tenacity, the Snowball reacts to your input with unwavering resolve. By applying directional forces, you guide the Snowball through a world engulfed in flames, where danger lurks at every corner.
