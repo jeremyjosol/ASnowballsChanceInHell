@@ -5,7 +5,7 @@
 </html>
 
 <html>
-<img src="https://s6.gifyu.com/images/S88uE.gif">
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzR2N2h2bDcxbXowenpxMDhqbW1xNXdrbmE2a2tpNnhvZXplMXR6ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZGJaovAXUcYfLkvIFs/giphy.gif" alt="gif">
 </html>
 
 _By [Ian Bravo](https://github.com/ian-bravo), [Jonathan Cheng](https://github.com/joncheng-dev), [Onur Kaymak](https://github.com/onurkaymak), [Richard Barbour](https://github.com/rbarcode), & [Jeremy Josol](https://github.com/jeremyjosol)_.
