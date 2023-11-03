@@ -1,7 +1,7 @@
 # A Snowball's Chance In Hell
 
 <html>
-<a href="https://gifyu.com/image/S88uE"><img src="https://s6.gifyu.com/images/S88uE.gif" alt="game" border="0" /></a>
+<img src="https://s6.gifyu.com/images/S88uE.gif">
 </html>
 
 _By [Ian Bravo](https://github.com/ian-bravo), [Jonathan Cheng](https://github.com/joncheng-dev), [Onur Kaymak](https://github.com/onurkaymak), [Richard Barbour](https://github.com/rbarcode), & [Jeremy Josol](https://github.com/jeremyjosol)_.
