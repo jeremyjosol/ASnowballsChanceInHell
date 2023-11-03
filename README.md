@@ -25,8 +25,8 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 
 * _Unity_
 
-#### 1. Installing Unity:
- > You'll need to have Unity installed and set up. If you don't, follow these steps to get started:
+### Installing Unity:
+ > If you don't already have Unity installed and set up, follow these steps to get started:
 
    a. Download Unity Hub:
   - Go to the [Unity Hub](https://unity.com/download) download page and download the Unity Hub installer for your operating system.
@@ -45,8 +45,8 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 
   - Click 'Next' and complete the installation.
 
-#### 2. Creating a Unity ID:
-> If you don't already have a Unity ID, you'll need to create one to access Unity services and products.
+### Creating a Unity ID:
+> If you don't already have a Unity ID, you'll need to create one to access Unity services and products:
 
   a. Visit the Unity Sign Up Page:
   - Go to the [Unity Sign Up](https://id.unity.com/en/conversations/75a860ff-9e24-41e3-9651-6e5c205637aa018f) page.
@@ -68,22 +68,22 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 
   - Click 'Open.'
 
-#### 4. Clone this repository
-  > Choose the directory where you want to work on this projet and in your terminal, enter the following command:
+### Cloning this repository
+  > Select the directory in which you want to work on this project, and then, in your terminal, enter the following command:
   ```
-  https://github.com/jeremyjosol/ASnowballsChanceInHell.git
+  $ git clone https://github.com/jeremyjosol/ASnowballsChanceInHell.git
   ``` 
 
 You are now ready to work with the Unity project, create or edit scripts, and collaborate with the team as needed. Make sure to consult the project-specific documentation for additional setup and usage instructions.
 
 ### Gameplay
-You, the player, take on the role of the Snowball GameObject, and in this story of courage and tenacity, the Snowball reacts to your input with unwavering resolve. By applying directional forces, you guide the Snowball through a world engulfed in flames, where danger lurks at every corner.
+You, the player, take on the role of the Snowball `GameObject`, and in this story of courage and tenacity, the Snowball reacts to your input with unwavering resolve. By applying directional forces, you guide the Snowball through a world engulfed in flames, where danger lurks at every corner.
 
 <html>
 <img src="GitAssets/Gameplay.jpg">
 </html>
 
-> #### Controls
+### Controls
 
 | Key  | Action        |   Description |
 | ----------- | ----------- |  -----------  |
@@ -93,7 +93,7 @@ You, the player, take on the role of the Snowball GameObject, and in this story 
 |   →	  `Right Arrow` | Go Right      | _Move Player GameObject to the right visitors_ |
 |  ␣  `Spacebar`  | Jump      |  _Make Player GameObject jump_ |
 
-> ##### Alternative Controls
+> #### Alternative Controls
 
 | Key | Action       |
 | --- | ------------ |
@@ -102,21 +102,23 @@ You, the player, take on the role of the Snowball GameObject, and in this story 
 | `S`   | Go Backward  |
 | `D`   | Go Right     |
 
-> #### Features and Mechanics
+### Features and Mechanics
 
-* The Player's speed is finely tuned to deliver a balanced yet thrilling experience.
+* Player speed is finely tuned for a balanced and thrilling experience.
 
-* All vessels in the game world are responsive to collisions, allowing for dynamic interactions.
+* All game world vessels respond to collisions, creating dynamic interactions.
 
-* Incrementable score display to keep track of performance.
+* Experience a snowball melting effect with a beat-the-clock timer display.
 
-* Various GameObjects that provide either a speed boost or slowdown.
+* Encounter various GameObjects for speed boosts and slowdown effects.
 
-* Beat the clock to make it to a safer destination without completely melting.
+* Keep track of user performance with an incrementable score display.
 
-* Sound effects and background music.
+* Immerse in the game world with sound effects and background music.
 
-* Win or lose conditions.
+* Face competitive win or lose conditions for an engaging challenge.
+
+* Customized game world environment design.
 
 ---
 
@@ -142,6 +144,7 @@ You, the player, take on the role of the Snowball GameObject, and in this story 
 * [Low Poly Fire](https://assetstore.unity.com/packages/vfx/particles/fire-explosions/low-poly-fire-244190)
 * [Metallic Coin](https://assetstore.unity.com/packages/3d/props/metallic-coin-free-trial-241879)
 * [Score and Time](https://assetstore.unity.com/packages/audio/sound-fx/score-and-time-59255)
+* [Transparent Culling System](https://assetstore.unity.com/packages/tools/camera/transparent-culling-system-urp-212951)
 
 
 > #### Music
