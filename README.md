@@ -1,6 +1,10 @@
 # A Snowball's Chance In Hell
 
 <html>
+<img src="GitAssets/Title.jpg">
+</html>
+
+<html>
 <img src="https://s6.gifyu.com/images/S88uE.gif">
 </html>
 
@@ -24,14 +28,14 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 ## Prerequisites
 > Before you can work with this project in Unity, you'll need to have Unity installed and set up. Follow these steps to get started:
 
-1. Installing Unity:
+#### 1. Installing Unity:
   > If you don't have Unity installed, follow these steps to get it up and running:
 
-> a. Download Unity Hub:
+   a. Download Unity Hub:
   - Go to the [Unity Hub](https://unity.com/download) download page and download the Unity Hub installer for your operating system.
   - Install Unity Hub by running the downloaded installer and following the on-screen instructions.
 
-> b. Installing Unity:
+   b. Setting Up Unity:
   - Open Unity Hub after installation.
 
   - Click the 'Installs' tab in Unity Hub.
@@ -44,21 +48,21 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 
   - Click 'Next' and complete the installation.
 
-2. Creating a Unity ID:
+#### 2. Creating a Unity ID:
 > If you don't already have a Unity ID, you'll need to create one to access Unity services and products.
 
-  > a. Visit the Unity Sign Up Page:
+  a. Visit the Unity Sign Up Page:
   - Go to the [Unity Sign Up](https://id.unity.com/en/conversations/75a860ff-9e24-41e3-9651-6e5c205637aa018f) page.
 
-  > b. Fill Out the Registration Form:
+  b. Fill Out the Registration Form:
   - Enter your email address, create a password, and complete the required fields.
 
   - Review Unity's terms and conditions, privacy policy, and cookie policy.
 
-  > c. Verify Your Email:
+  c. Verify Your Email:
   - Check your email for a verification link from Unity. Click the link to verify your email address.
 
-  > d. Configure Unity to Use Visual Studio (or Visual Studio Code):
+  d. Configure Unity to Use Visual Studio (or Visual Studio Code):
   - In Unity, go to 'Edit' > 'Preferences' (or 'Unity' > 'Preferences' on macOS).
 
   - Under the 'External Tools' section, choose 'External Script Editor.'
@@ -67,7 +71,7 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 
   - Click 'Open.'
 
-4. Clone this repository
+#### 4. Clone this repository
   > Choose the directory where you want to work on this projet and in your terminal, enter the following command:
   ```
   https://github.com/jeremyjosol/ASnowballsChanceInHell.git
