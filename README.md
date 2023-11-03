@@ -28,11 +28,11 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 ### Installing Unity:
  > If you don't already have Unity installed and set up, follow these steps to get started:
 
-   a. Download Unity Hub:
+   a. **Download Unity Hub**:
   - Go to the [Unity Hub](https://unity.com/download) download page and download the Unity Hub installer for your operating system.
   - Install Unity Hub by running the downloaded installer and following the on-screen instructions.
 
-   b. Set Up Unity:
+   b. **Set Up Unity**:
   - Open Unity Hub after installation.
 
   - Click the 'Installs' tab in Unity Hub.
@@ -48,18 +48,18 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
 ### Creating a Unity ID:
 > If you don't already have a Unity ID, you'll need to create one to access Unity services and products:
 
-  a. Visit the Unity Sign Up Page:
+  a. **Visit the Unity Sign Up Page**:
   - Go to the [Unity Sign Up](https://id.unity.com/en/conversations/75a860ff-9e24-41e3-9651-6e5c205637aa018f) page.
 
-  b. Fill Out the Registration Form:
+  b. **Fill Out the Registration Form**:
   - Enter your email address, create a password, and complete the required fields.
 
   - Review Unity's terms and conditions, privacy policy, and cookie policy.
 
-  c. Verify Your Email:
+  c. **Verify Your Email**:
   - Check your email for a verification link from Unity. Click the link to verify your email address.
 
-  d. Configure Unity to Use Visual Studio (or Visual Studio Code):
+  d. **Configure Unity to Use Visual Studio (or Visual Studio Code)**:
   - In Unity, go to 'Edit' > 'Preferences' (or 'Unity' > 'Preferences' on macOS).
 
   - Under the 'External Tools' section, choose 'External Script Editor.'
@@ -90,7 +90,7 @@ You, the player, take on the role of the Snowball `GameObject`, and in this stor
 |   ↑	`Up Arrow`     | Go Forward     | _Move Player GameObject forward_  |
 |   ←  `Left Arrow`     | Go Left      | _Move Player GameObject to the left_ |
 |   ↓	 `Down Arrow` | Go Backward      | _Move Player GameObject backward_ |
-|   →	  `Right Arrow` | Go Right      | _Move Player GameObject to the right visitors_ |
+|   →	  `Right Arrow` | Go Right      | _Move Player GameObject to the right_ |
 |  ␣  `Spacebar`  | Jump      |  _Make Player GameObject jump_ |
 
 > #### Alternative Controls
@@ -104,31 +104,21 @@ You, the player, take on the role of the Snowball `GameObject`, and in this stor
 
 ### Features and Mechanics
 
-* Player speed is finely tuned for a balanced and thrilling experience.
+* Witness game world vessels respond to collisions, creating dynamic interactions.
 
-* All game world vessels respond to collisions, creating dynamic interactions.
+* Feel the finely tuned Player speed for a balanced yet exhilarating experience.
+
+* Encounter various GameObjects that offer speed boosts and slowdown effects.
 
 * Experience a snowball melting effect with a beat-the-clock timer display.
 
-* Encounter various GameObjects for speed boosts and slowdown effects.
-
-* Keep track of user performance with an incrementable score display.
+* Monitor and improve user performance with an incrementable score display.
 
 * Immerse in the game world with sound effects and background music.
 
 * Face competitive win or lose conditions for an engaging challenge.
 
-* Customized game world environment design.
-
----
-
-<html>
-<img src="GitAssets/Unity.jpg">
-</html>
-
-  > _Powered by Unity_
-
----
+* Explore a customized game world environment's concept and design.
 
 ### Credits and Acknowledgements
 
@@ -153,6 +143,16 @@ You, the player, take on the role of the Snowball `GameObject`, and in this stor
 - **Songs:** 
   - Bbydhyonchord
   - Vordhosbn
+
+---
+
+<html>
+<img src="GitAssets/Unity.jpg">
+</html>
+
+  > Powered by Unity
+
+---
 
 ### Known Bugs
 ...Bugs? They're features! 😉
