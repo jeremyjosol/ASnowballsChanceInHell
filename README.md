@@ -69,7 +69,7 @@ Every action shapes the Snowball's destiny, making it more than just a test of s
   - Click 'Open.'
 
 ### Cloning this repository
-  > Select the directory in which you want to work on this project, and then, in your terminal, enter the following command:
+  > Choose the project directory and in your terminal enter the command:
   ```
   $ git clone https://github.com/jeremyjosol/ASnowballsChanceInHell.git
   ``` 
